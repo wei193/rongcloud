@@ -13,7 +13,7 @@ func (r *Rongcloud) UserGetToken(userID, name, portraitURI string) (token string
 	data["name"] = name
 	data["portraitUri"] = portraitURI
 
-	req, err := createRequset(USERGETTOKEN, "POST", data, nil)
+	req, err := createRequset(UserGetToken, "POST", data, nil)
 	if err != nil {
 		return "", err
 	}
@@ -45,7 +45,7 @@ func (r *Rongcloud) UserRefresh(userID, name, portraitURI string) (err error) {
 	data["userId"] = userID
 	data["name"] = name
 	data["portraitUri"] = portraitURI
-	req, err := createRequset(USERREFRESH, "POST", data, nil)
+	req, err := createRequset(UserRefresh, "POST", data, nil)
 	if err != nil {
 		return err
 	}

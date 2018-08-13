@@ -16,15 +16,17 @@ import (
 
 //SERVERADDR 请求地址
 const (
-	SERVERADDR          = "http://api.cn.ronghub.com"
-	USERGETTOKEN        = SERVERADDR + "/user/getToken.json"
-	USERREFRESH         = SERVERADDR + "/user/refresh.json"
-	USERBLOCK           = SERVERADDR + "/user/block.json"
-	USERUNBLOCK         = SERVERADDR + "/user/unblock.json"
-	USERUNBLOCKQUERY    = SERVERADDR + "/user/block/query.json"
-	USERBLACKLISTADD    = SERVERADDR + "/user/blacklist/add.json"
-	USERBLACKLISTREMOVE = SERVERADDR + "/user/blacklist/remove.json"
-	USERBLACKLISTQUERY  = SERVERADDR + "/user/blacklist/query.json"
+	SERVERADDR                  = "http://api.cn.ronghub.com"
+	UserGetToken                = SERVERADDR + "/user/getToken.json"
+	UserRefresh                 = SERVERADDR + "/user/refresh.json"
+	UserBlock                   = SERVERADDR + "/user/block.json"
+	UserUnblock                 = SERVERADDR + "/user/unblock.json"
+	UserBlockQuery              = SERVERADDR + "/user/block/query.json"
+	UserBlacklistAdd            = SERVERADDR + "/user/blacklist/add.json"
+	UserBlacklistRemove         = SERVERADDR + "/user/blacklist/remove.json"
+	UserBlacklistQuery          = SERVERADDR + "/user/blacklist/query.json"
+	ConversationNotificationSet = SERVERADDR + "/conversation/notification/set.json"
+	ConversationNotificationGet = SERVERADDR + "/conversation/notification/get.json"
 )
 
 //Rongcloud Rongcloud
